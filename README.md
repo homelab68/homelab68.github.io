@@ -39,6 +39,18 @@ A workflow is included at `.github/workflows/deploy-pages.yml`. It runs on push 
 
 If your default branch is `master`, change the workflow trigger to `branches: ["master"]`.
 
+## Screenshots → WebP
+
+To convert PNG/JPG screenshots to WebP for better performance:
+
+```bash
+npm run convert:webp          # default: public/
+npm run convert:webp public   # explicit directory
+node scripts/convert-to-webp.mjs public --quality=80   # custom quality (1-100)
+```
+
+Writes `.webp` files next to each image. Update your component image paths to use `.webp`. Does not delete originals.
+
 ## Pages
 
 - **Home** — CTA contact/support, new projects (3), coming soon sections

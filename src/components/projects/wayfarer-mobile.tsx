@@ -10,12 +10,12 @@ const STORE_LINKS = {
 } as const;
 
 const WAYFARER_SCREENSHOTS: ScreenshotItem[] = [
-  // Add paths to your app screenshots in /public, e.g.:
-  { src: "/projects/wayfarer-mobile/screen1.png", alt: "Select the correct cell for the nomination" },
-  { src: "/projects/wayfarer-mobile/screen2.png", alt: "View the entry map" },
-  { src: "/projects/wayfarer-mobile/screen3.png", alt: "View nomination information" },
-  { src: "/projects/wayfarer-mobile/screen4.png", alt: "Easily and quickly enable scripts" },
-  { src: "/projects/wayfarer-mobile/screen5.png", alt: "Add a custom script" },
+  // Use WebP for better performance (run: npm run convert:webp)
+  { src: "/projects/wayfarer-mobile/screen1.webp", alt: "Select the correct cell for the nomination" },
+  { src: "/projects/wayfarer-mobile/screen2.webp", alt: "View the entry map" },
+  { src: "/projects/wayfarer-mobile/screen3.webp", alt: "View nomination information" },
+  { src: "/projects/wayfarer-mobile/screen4.webp", alt: "Easily and quickly enable scripts" },
+  { src: "/projects/wayfarer-mobile/screen5.webp", alt: "Add a custom script" },
 ];
 
 const FEATURES = [
