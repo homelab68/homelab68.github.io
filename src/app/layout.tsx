@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { FirebaseAnalytics } from "@/components/firebase-analytics";
 import { siteConfig } from "@/config/site";
 import "./globals.css";
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen font-body antialiased">
         <ThemeProvider defaultTheme="system" storageKey="homelab68-theme">
+          <FirebaseAnalytics />
           <Header />
           <main className="min-h-[calc(100vh-3.5rem)]">{children}</main>
           <Footer />
